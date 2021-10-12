@@ -37,7 +37,7 @@ class SelectCommandTest {
 
         FindCommand.filteredItemList.clear();
         FindCommand command1 = new FindCommand(findCommandInput);
-        assertEquals(2, FindCommand.filteredItemList.size());
+        assertEquals(2, command1.filteredItemList.size());
 
         SelectCommand command = new SelectCommand(selectCommandInput);
         CommandResult selectResult = command.execute();

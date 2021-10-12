@@ -37,9 +37,7 @@ class FindCommandTest {
 
         FindCommand command = new FindCommand(testInput);
         CommandResult findResult = command.execute();
-        System.out.println(FindCommand.filteredItemList.size());
-
-        assertEquals(1, FindCommand.filteredItemList.size());
+        assertEquals(1, command.filteredItemList.size());
         assertEquals(testInputFeedback, findResult.feedbackToUser);
     }
 }
