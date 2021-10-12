@@ -20,11 +20,8 @@ public class FindCommand extends Command {
     public FindCommand(String[] command) {
         try {
             keyword = command[1];
-            if (keyword.isEmpty()) {
-                throw new DukeException("Please enter a keyword!");
-            }
-        } catch (DukeException e) {
-            System.out.println(e.getMessage());
+        } catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("Please enter a keyword!");
         }
     }
 

@@ -107,7 +107,7 @@ public class Ui {
 
     public static String getEvent(Event event) {
         return event.getTitle() + System.lineSeparator()
-                + Parser.convertDateTime(event.getDateValue()) + System.lineSeparator();
+                + Parser.convertDateTime(event.getDateTime()) + System.lineSeparator();
     }
 
     public static void printTask(Task task) {
